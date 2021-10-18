@@ -1,0 +1,9 @@
+step1 : clone the repository 
+step2 : cd to the folder 
+step3 : create branch using : git chekcout -b cse3004-your_r0ll_number
+step4 : write your programs/exectue/take_snapshot
+step5: commit the changes
+go to credential manager in window and remove existing credeitial for windows
+step6: push to get remote using : git push origin cse3004-your_roll_number
+step7: use the token given to auhorize
+step8: then you can successfully push code to cse3004 folder.
