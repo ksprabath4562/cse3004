@@ -1,4 +1,3 @@
-package dsa;
 
 import java.util.*;
 
@@ -10,13 +9,13 @@ class greedykruskals{
 		
 		@Override
 		public int compareTo(Edge o) {
-			// TODO Auto-generated method stub
+			
 			return this.weight-o.weight;
 		}
 		
 	};
 	
-	//union
+	
 	class subset{
 		int parent,rank;
 	};
@@ -24,7 +23,7 @@ class greedykruskals{
 	int vertices,edges;
 	Edge edge[];
 	
-	//graph creation
+	
 	greedykruskals(int v,int e){
 		vertices=v;
 		edges=e;
@@ -58,7 +57,7 @@ class greedykruskals{
 	}
 	
 	
-	//kruskals algorthm
+	
 	void kruskalsalgo() {
 		Edge result[]=new Edge[vertices];
 		
@@ -68,7 +67,7 @@ class greedykruskals{
 		for(i=0;i<vertices;++i) 
 			result[i]=new Edge();
 		
-		// Sorting the edges
+	
 	    Arrays.sort(edge);
 	    subset subsets[] = new subset[vertices];
 	    for (i = 0; i < vertices; ++i)
@@ -93,8 +92,8 @@ class greedykruskals{
 	      System.out.println(result[i].source + " - " + result[i].destination + ": " + result[i].weight);
 	  }
 public static void main(String[] args) {
-    int vertices = 6; // Number of vertices
-    int edges = 8; // Number of edges
+    int vertices = 6; 
+    int edges = 8; 
     greedykruskals G = new greedykruskals(vertices, edges);
 
     G.edge[0].source = 0;
