@@ -3,7 +3,7 @@ class mergesort
 {
 	public static void main(String arg[])
 	{
-		System.out.println("MergeSort");
+		System.out.println("Merge   Sort");
 	}
 }
 
